@@ -1,0 +1,32 @@
+body{
+    font-family: raleway;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+header{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    max-width: 100px;
+}
+.navigation{
+    display: flex;
+    max-width: 400px;
+    justify-content: space-around;
+}
+.location{
+    padding-left: 40px;
+}
