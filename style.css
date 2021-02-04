@@ -30,3 +30,121 @@ header{
 .location{
     padding-left: 40px;
 }
+.searchbar{
+    border: 1px solid;
+    border-color: rgb(220,220,220);
+    border-radius: 20px;
+    width: 410px;
+    height: 50px;
+    display: flex;
+}
+.section-gauche{
+    width: 100%;
+    max-width: 50px;
+    background-color: rgb(220,220,220);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-milieu{
+    width: 100%;
+    max-width: 230px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.search{
+    width: 100%;
+    max-width: 230px;
+    height: 100%;
+    max-height: 40px;
+    max-height: px;
+    border: 0;
+}
+::placeholder {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.section-droite{
+    width: 100%;
+    max-width: 130px;
+    background-color: #3333ff;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.pointer{
+    width: 30px;
+}
+.section-droite p{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 930px;
+    margin-top: 30px;
+}
+.title-filter{
+    font-weight: bold;
+    width: 100%;
+    max-width: 55px;
+}
+#box-filter{
+    border: 1px solid;
+    border-color: #e6e6e6;
+    border-radius: 50px;
+    height: 50px;
+    width: 100%;
+    max-width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+#box-filter p{
+    margin-right: 20px;
+}
+#box-logo{
+    background-color: #cce0ff;
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+#box-logo img{
+    width: 15px;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.informations{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 25px;
+    margin-top: 20px;
+}
+.i{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid;
+}
+.i img{
+    width: 5px;
+
+}
