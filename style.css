@@ -2,7 +2,8 @@ body{
     font-family: raleway;
     margin: 20px 0 0 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 header{
     width: 100%;
@@ -49,6 +50,9 @@ header{
     justify-content: center;
     align-items: center;
 }
+.pointer{
+    width: 20px;
+}
 .section-milieu{
     width: 100%;
     max-width: 230px;
@@ -77,9 +81,6 @@ header{
     display: flex;
     justify-content: center;
 }
-.pointer{
-    width: 30px;
-}
 .section-droite p{
     color: white;
     font-weight: bold;
@@ -90,7 +91,7 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 930px;
+    max-width: 880px;
     margin-top: 30px;
 }
 .title-filter{
@@ -99,34 +100,52 @@ header{
     max-width: 55px;
 }
 #box-filter{
-    border: 1px solid;
+    border: 2px solid;
     border-color: #e6e6e6;
     border-radius: 50px;
-    height: 50px;
-    width: 100%;
-    max-width: 240px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
 }
+.economic{
+    width: 160px;
+}
+.familial{
+    width: 130px;
+}
+.romantic{
+    width: 150px;
+}
+.animals{
+    width: 205px;
+}
 #box-filter p{
-    margin-right: 20px;
+    margin: 0;
 }
 #box-logo{
     background-color: #cce0ff;
     width: 100%;
-    max-width: 50px;
-    height: 50px;
+    max-width: 40px;
+    height: 40px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
+
+}
+.filter-option{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 #box-logo img{
     width: 15px;
 }
 .options{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    max-width: 780px;
 }
 .informations{
     display: flex;
@@ -244,4 +263,67 @@ header{
     border-radius: 20px;
     margin-top: 20px;
     box-shadow: 2px 5px 15px 5px rgba(0,0,0,0.07);
+}
+.activities{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.activities-title p{
+    font-weight: bold;
+    font-size: 19px; 
+}
+.box-activities{
+    display: flex;
+    justify-content: space-between;
+}
+#boxes{
+    width: 270px;
+    height: 400px;
+    background-color: white;
+}
+.act-1,
+.act-4{
+    width: 270px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: blue;
+}
+.act-2{
+    width: 270px;
+    height: 210px;
+    border-radius: 20px;
+    background-color: blue;
+}
+.act-6{
+    width: 270px;
+    height: 180px;
+    background-color: blue;
+    border-radius: 20px;
+}
+.act-3{
+    width: 270px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 20px;
+}
+.act-5{
+    width: 270px;
+    height: 180px;
+    background-color: blue;
+    border-radius: 20px;
+}
+.box-2,
+.box-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.foot-container{
+    width: 1280px;
+    max-width: 1280px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    margin-top: 30px;
 }
