@@ -102,9 +102,6 @@ a:visited{
     justify-content: center;
     align-items: center;
 }
-.pointer{
-    width: 20px;
-}
 .section-milieu{
     width: 100%;
     display: flex;
@@ -561,5 +558,72 @@ footer{
     margin: 10px 0;
 }
 @media screen and (max-width: 480px){
-
+    body{
+        max-width: 375px;
+    }
+    header,
+    main,
+    footer{
+        max-width: 375px;
+    }
+    .container,
+    .navigation{
+        width: 100%;
+    }
+    .top{
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .title{
+        width: 350px;
+    }
+    .title h3{
+        font-size: 23px;
+        margin: 0;
+    }
+    .title p{
+        margin-top: 10px;
+        font-size: 17px;
+    }
+    .recherche{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .searchbar{
+        width: auto;
+    }
+    .filter{
+        flex-wrap: wrap;
+        width: 340px;
+        align-items: center;
+    }
+    .options{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #box-filter{
+        margin: 5px;
+    }
+    .informations{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .informations p{
+        width: 330px;
+    }
+    #housing{
+        flex-direction: column-reverse;
+    }
+    .box-activities{
+        flex-direction: column;
+    }
+    .box-activities:hover{
+        transform: none;
+    }
 }
