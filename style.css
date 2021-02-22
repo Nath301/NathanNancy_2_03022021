@@ -1,5 +1,5 @@
 body{
-    font-family: raleway;
+    font-family: 'Raleway', sans-serif; 
     display: flex;
     flex-direction: column;
     align-items: center;
