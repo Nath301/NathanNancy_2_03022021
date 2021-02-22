@@ -27,20 +27,32 @@ header{
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-wrap: wrap;
 
+}
+.logo-div{
+    flex-grow: 1;
+}
+.navigation{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.register{
+    margin-left: 20px;
+    width: auto;
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.location-activities{
+    position: relative;
+    float: right;
 }
 .logo{
     width: 90px;
-}
-.navigation{
-    display: flex;
-    width: 30%;
-    height: 100%;
-    justify-content: space-around;
-    align-items: flex-end;
-    font-size: 14px;
 }
 .location-housing,
 .location-activities{
@@ -64,14 +76,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000;
-}
-.register{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #sign-up{
     color: #0065FC;
@@ -79,9 +83,11 @@ header{
 }
 a:link{
     text-decoration: none;
+    color: #000;
 }
 a:visited{
     text-decoration: none;
+    color: #000;
 }
 .recherche{
     margin-top: 70px;
@@ -131,6 +137,9 @@ input{
     justify-content: center;
     cursor: pointer;
     border: 0;
+}
+.fa-search{
+    display: none;
 }
 .section-droite p{
     color: white;
@@ -269,9 +278,8 @@ input{
     justify-content: space-between;
 }
 .choice{
-    width: 100%;
     height: 170px;
-    max-width: 220px;
+    width: 220px;
     background-color: white;
     border-radius: 20px;
     margin-top: 20px;
@@ -286,8 +294,7 @@ input{
     cursor: pointer;
 }
 .choice img{
-    width: 100%;
-    max-width: 210px;
+    width: 210px;
     height: auto;
     max-height: 100px;
     border-radius: 18px 18px 0 0;
@@ -295,8 +302,7 @@ input{
     object-fit: cover;
 }
 .about-choice{
-    width: 100%;
-    max-width: 190px;
+    width: 190px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -418,7 +424,6 @@ input{
     margin-top: 40px;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 1280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,13 +442,11 @@ input{
 .box-activities{
     width: 100%;
     max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#boxes{
-    width: 270px;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 .act-1,
 .act-2,
@@ -455,6 +458,10 @@ input{
     border-radius: 20px;
     box-shadow: 2px 5px 15px 5px rgba(0,0,0,0.10);
     transition: transform .5s;
+}
+.act-3,
+.act-6{
+    margin-top: 40px;
 }
 .act-1:hover,
 .act-2:hover,
@@ -469,7 +476,7 @@ input{
 .act-4{
     height: 400px;
 }
-.act-2{;
+.act-2{
     height: 210px;
 }
 .act-6{
@@ -490,37 +497,30 @@ input{
 }
 .act-img{
     width: 100%;
-    max-width: 270px;
     border-radius: 18px 18px 0 0;
     object-fit: cover;
 }
 .act-1 .act-img,
 .act-4 .act-img{
-    height: 100%;
-    max-height: 350px;
+    height: 350px;
 }
 .act-2 .act-img{
-    height: 100%;
-    max-height: 160px;
+    height: 160px;
 }
 .act-6 .act-img{
-    height: 100%;
-    max-height: 130px;
+    height: 130px;
 }
 .act-3 .act-img{
-    height: 100%;
-    max-height: 100px;
+    height: 100px;
 }
 .act-5 .act-img{
-    height: 100%;
-    max-height: 130px;
+    height: 130px;
 }
 .act-name{
     display: flex;
     align-items: center;
     margin-left: 10px;
-    height: 100%;
-    max-height: 40px;
+    height: 40px;
 }
 footer{
     width: 100%;
@@ -557,27 +557,183 @@ footer{
     color: black;
     margin: 10px 0;
 }
+@media screen and (min-width: 500px) and (max-width: 900px){
+    body{
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+    }
+    .top{
+        position: relative;
+        width: 100%;
+    }
+    .recherche{
+        margin-top: 0;
+    }
+    .searchbar{
+        width: 45%;
+    }
+    .filter{
+        width: 100%;
+    }
+    .informations{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    #housing{
+        flex-direction: column;
+    }
+    .housing-marseille{
+        width: 100%;
+    }
+    .logements{
+        max-width: 750px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .popular{
+        max-width: 750px;
+        height: 300px;
+        margin-top: 30px;
+    }
+    .box-popular{
+        max-width: 730px;
+        width: 90%;
+
+    }
+    .header-title{
+        max-width: 730px;
+    }
+    .housing-pop{
+        display: flex;
+        justify-content: space-between;
+    }
+    .choice-pop{
+        height: 170px;
+        width: 215px;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 2px 5px 15px 5px rgba(0,0,0,0.07);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .choice-pop img{
+        max-width: 200px;
+        height: auto;
+        max-height: 100px;
+        border-radius: 18px 18px 0 0;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    .about-pop-choice p{
+        margin: 0;
+    }
+    .rate{
+        margin: 0;
+    }
+    .choice{
+        width: 215px;
+    }
+    .activities{
+        width: 100%;
+    }
+    .box-activities{
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .act-1,
+    .act-2,
+    .act-3,
+    .act-4,
+    .act-5,
+    .act-6{
+        font-size: 18px;
+        height: 200px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .act-1 .act-img,
+    .act-2 .act-img,
+    .act-3 .act-img,
+    .act-4 .act-img,
+    .act-5 .act-img,
+    .act-6 .act-img{
+        height: 140px;
+    }
+}
 @media screen and (max-width: 480px){
     body{
-        max-width: 375px;
+        max-width: 100%;
+        margin-top: 20px;
     }
-    header,
+    header{
+        align-items: flex-start;
+    }
     main,
-    footer{
-        max-width: 375px;
-    }
     .container,
     .navigation{
         width: 100%;
     }
     .top{
         position: relative;
+        max-width: 375px;
+        height: 120px;
         width: 100%;
-        flex-direction: column;
+        align-items: center;
+    }
+    .logo-div{
+        flex-grow: 1;
+        margin-left: 20px;
+    }
+    .navigation{
+        order: 2;
+    }
+    .location-activities,
+    .location-housing{
+        font-size: 1.2em;
+    }
+    .location-housing{
+        height: 90px;
+        background-color: #0065FC;
+        display: flex;
         align-items: flex-start;
+        color: #0065FC;
+    }
+    .location-housing a{
+        height: 98%;
+        color: #0065FC;
+        background-color: #FFF;
+    }
+    .register{
+        margin-right: 20px;
+    }
+    .register a{
+        font-size: 17px;
     }
     .title{
         width: 350px;
+    }
+    .section-droite{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-droite p{
+        display: none;
+    }
+    .fa-search{
+        display: block;
+        color: #FFF;
+        width: 30px;
     }
     .title h3{
         font-size: 23px;
@@ -588,15 +744,19 @@ footer{
         font-size: 17px;
     }
     .recherche{
-        width: 100%;
+        width: 340px;
         margin-top: 30px;
+        margin-left: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
     }
     .searchbar{
         width: auto;
+    }
+    .section-droite{
+        width: 60px;
+        border-radius: 10px;
     }
     .filter{
         flex-wrap: wrap;
@@ -604,6 +764,7 @@ footer{
         align-items: center;
     }
     .options{
+        justify-content: flex-start;
         flex-wrap: wrap;
         width: 100%;
     }
@@ -616,14 +777,95 @@ footer{
     }
     .informations p{
         width: 330px;
+        margin-left: 10px;
     }
     #housing{
         flex-direction: column-reverse;
     }
-    .box-activities{
+    .housing-marseille{
+        width: auto;
+        background-color: #FFF;
+    }
+    .logements{
+        width: 340px;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .choice-pop{
+        cursor: pointer;
+    }
+    .popular{
+        border-radius: 0;
+    }
+    .choice{
+        width: 340px;
+        height: 190px;
+        cursor: pointer;
+
+    }
+    .about-choice{
+        width: 90%;
+        font-size: 15px;
+    }
+    .about-choice h5{
+        font-size: 15px;
+    }
+    .choice img{
+        width: 330px;
+    }
+    .activities-title{
+        width: 340px;
+    }
+    .box-activities{
+        height: 100%;
+        width: 340px;
     }
     .box-activities:hover{
         transform: none;
+    }
+    .act-1:hover,
+    .act-2:hover,
+    .act-3:hover,
+    .act-4:hover,
+    .act-5:hover,
+    .act-6:hover{
+        transform: none;
+    }
+    .act-1,
+    .act-2,
+    .act-3,
+    .act-4,
+    .act-5,
+    .act-6{
+        width: 100%;
+        font-size: 18px;
+        height: 200px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .act-1 .act-img,
+    .act-2 .act-img,
+    .act-3 .act-img,
+    .act-4 .act-img,
+    .act-5 .act-img,
+    .act-6 .act-img{
+        height: 140px;
+    }
+    .act-name{
+        margin-left: 20px;
+        align-items: center;
+        height: 60px;
+    }
+    footer{
+        height: 100%;
+    }
+    .foot-container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .apropos,
+    .housing-foot{
+        margin-bottom: 20px;
     }
 }
