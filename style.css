@@ -20,7 +20,6 @@ header{
 }
 
 .top{
-    position: fixed;
     width: 100%;
     max-width: 1200px;
     height: 70px;
@@ -69,7 +68,7 @@ header{
 .location-housing:hover{
     background-color: #0065FC;
 }
-#link{
+.link{
     width: 100%;
     height: 97%;
     background-color: white;
@@ -88,9 +87,6 @@ a:link{
 a:visited{
     text-decoration: none;
     color: #000;
-}
-.recherche{
-    margin-top: 70px;
 }
 .searchbar{
     border: 1px solid;
@@ -135,18 +131,20 @@ input{
     border-radius: 0 10px 10px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     border: 0;
 }
 .fa-search{
     display: none;
 }
-.section-droite p{
+.section-droite span{
     color: white;
     font-weight: bold;
     display: flex;
     justify-content: center;
     font-size: 14px;
+    height: 20px;
 }
 .filter{
     display: flex;
@@ -158,7 +156,7 @@ input{
     font-weight: bold;
     width: 10%;
 }
-#box-filter{
+.box-filter{
     border: 2px solid;
     border-color: #e6e6e6;
     border-radius: 60px;
@@ -168,7 +166,7 @@ input{
     transition: border-color 1s;
     cursor: pointer;
 }
-#box-filter:hover{
+.box-filter:hover{
     border-color: #0065FC;
 }
 .economic{
@@ -198,10 +196,10 @@ input{
     display: flex;
     justify-content: center;
 }
-#box-filter p{
+.box-filter p{
     margin: 0;
 }
-#box-logo{
+.box-logo{
     background-color: #DEEBFF;
     border: solid 2px #DEEBFF;
     width: 40px;
@@ -212,7 +210,7 @@ input{
     align-items: center;
     margin-left: -2px;
 }
-#box-filter:hover{
+.box-filter:hover{
     border-color: #0065FC;
 }
 .filter-option{
@@ -263,9 +261,8 @@ input{
     width: 90%;
 }
 .housing-title{
-    font-weight: bold;
     margin-top: 30px;
-    font-size: 19px;
+    font-size: 18px;
 }
 .housing-title p{
     margin: 0;
@@ -355,6 +352,7 @@ input{
 }
 .popular-title{
     max-width: 200px;
+    font-size: 18px;
     display: flex;
     align-items: center;
 
@@ -431,13 +429,12 @@ input{
 }
 .activities-title{
     width: 100%;
-    max-width: 1200px;
     display: flex;
     justify-content: flex-start;
 }
-.activities-title p{
+.activities-title h3{
     font-weight: bold;
-    font-size: 19px; 
+    font-size: 18px; 
 }
 .box-activities{
     width: 100%;
@@ -557,7 +554,7 @@ footer{
     color: black;
     margin: 10px 0;
 }
-@media screen and (min-width: 500px) and (max-width: 900px){
+@media screen and (min-width: 500px) and (max-width: 1200px){
     body{
         width: 100%;
     }
@@ -568,11 +565,11 @@ footer{
         position: relative;
         width: 100%;
     }
-    .recherche{
-        margin-top: 0;
-    }
     .searchbar{
         width: 45%;
+    }
+    .options{
+        flex-wrap: wrap;
     }
     .filter{
         width: 100%;
@@ -586,6 +583,7 @@ footer{
     }
     .housing-marseille{
         width: 100%;
+        max-width: 780px;
     }
     .logements{
         max-width: 750px;
@@ -727,7 +725,7 @@ footer{
         align-items: center;
         justify-content: center;
     }
-    .section-droite p{
+    .section-droite span{
         display: none;
     }
     .fa-search{
@@ -768,7 +766,7 @@ footer{
         flex-wrap: wrap;
         width: 100%;
     }
-    #box-filter{
+    .box-filter{
         margin: 5px;
     }
     .informations{
