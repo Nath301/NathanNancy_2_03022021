@@ -1,3 +1,7 @@
+html{
+    display: flex;
+    justify-content: center;
+}
 body{
     font-family: 'Raleway', sans-serif; 
     display: flex;
