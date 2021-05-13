@@ -22,7 +22,6 @@ header{
     justify-content: center;
     flex-direction: column;
 }
-
 .top{
     width: 100%;
     max-width: 1200px;
@@ -108,6 +107,10 @@ a:visited{
     justify-content: center;
     align-items: center;
 }
+.fa-map-marker-alt{
+    width: 13px; 
+    height: auto
+}
 .section-milieu{
     width: 100%;
     display: flex;
@@ -184,6 +187,7 @@ input{
 .fa-dog,
 .fa-info{
     color: #0065FC;
+    font-size: 18px;
 }
 .familial{
     width: 90px;
@@ -222,6 +226,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bolder;
 }
 #box-logo img{
     width: 15px;
@@ -321,6 +326,9 @@ input{
     display: flex;
     justify-content: flex-start;
     margin-top: 10px;
+}
+.fa-star{
+    font-size: 12px;
 }
 .star[data-active=true]{
     color: #0065FC;
@@ -558,7 +566,7 @@ footer{
     color: black;
     margin: 10px 0;
 }
-@media screen and (min-width: 500px) and (max-width: 1200px){
+@media screen and (min-width: 480px) and (max-width: 1200px){
     body{
         width: 100%;
     }
@@ -577,6 +585,9 @@ footer{
     }
     .filter{
         width: 100%;
+    }
+    .filter-option{
+        margin-top: 5px;
     }
     .informations{
         width: 100%;
