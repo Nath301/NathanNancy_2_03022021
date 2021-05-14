@@ -189,6 +189,9 @@ input{
     color: #0065FC;
     font-size: 18px;
 }
+.fa-info{
+    font-size: 4px;
+}
 .familial{
     width: 90px;
     display: flex;
@@ -383,6 +386,10 @@ input{
 }
 .share img{
     width: 22px;
+}
+.fa-chart-line{
+    font-size: 21px;
+    height: auto;
 }
 .choice-pop{
     width: 300px;
@@ -594,7 +601,7 @@ footer{
         justify-content: flex-start;
     }
     #housing{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .housing-marseille{
         width: 100%;
