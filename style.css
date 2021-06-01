@@ -184,13 +184,13 @@ input{
 .fa-heart,
 .fa-child,
 .fa-money-bill-wave,
-.fa-dog,
-.fa-info{
+.fa-dog{
     color: #0065FC;
     font-size: 18px;
 }
 .fa-info{
-    font-size: 4px;
+    color: #0065FC;
+    font-size: 10px;
 }
 .familial{
     width: 90px;
@@ -604,7 +604,6 @@ footer{
     }
     .housing-marseille{
         width: 100%;
-        max-width: 780px;
     }
     .logements{
         max-width: 750px;
