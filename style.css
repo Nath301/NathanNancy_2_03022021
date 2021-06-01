@@ -91,6 +91,7 @@ a:visited{
     text-decoration: none;
     color: #000;
 }
+/*Barre de recherche*/
 .searchbar{
     border: 1px solid;
     border-color: #f2f2f2;
@@ -153,6 +154,7 @@ input{
     font-size: 14px;
     height: 20px;
 }
+/*filtres de recherche*/
 .filter{
     display: flex;
     justify-content: space-between;
@@ -240,6 +242,7 @@ input{
     justify-content: space-between;
     width: 100%;
 }
+/*Information sur les logements*/
 .informations{
     display: flex;
     justify-content: space-between;
@@ -263,6 +266,7 @@ input{
     display: flex;
     justify-content: space-between;
 }
+/*Hébergements à Marseille*/
 .housing-marseille{
     width: 65%;
     background-color: #F2F2F2;
@@ -344,6 +348,7 @@ input{
     font-weight: 600;
     margin-top: 30px;
 }
+/*Hébergement populaires*/
 .popular{
     width: 380px;
     max-height: 540px;
@@ -436,6 +441,7 @@ input{
     margin-bottom: 30px;
     font-size: 12px;
 }
+/*Activités à Marseille*/
 #activities{
     margin-top: 40px;
     margin-bottom: 20px;
